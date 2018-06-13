@@ -750,20 +750,21 @@ interface FunctionAcc<T,R>{
 }
 
 // # 1 il faut redéfinir la fonction apply de notre FunctionAcc anonyme
-int sum = Accumulator.accumulate(list, 0, new FunctionAccumulateur<Pair<String, Integer>, Integer>() {
-    @Override
-    public Integer apply(int init, Pair<String, Integer> arg) {
-        return init + arg.second();
+int sum = Accumulator.accumulate(list, 0, new FunctionAccumulateur<Pair<String, Integer>, Integer>() 
+	{
+	    @Override
+	    public Integer apply(int init, Pair<String, Integer> arg) {
+	        return init + arg.second();
     }
 });
 
 //# 2 ou ecrire notre Function en dehors et la passe a l'accumulator
 FunctionAccumulateur<Pair<String, Integer>, Integer> f 
 				= new FunctionAccumulateur<Pair<String, Integer>, Integer>() 
-	{
-	    @Override
-	    public Integer apply(int init, Pair<String, Integer> pair) {
-	        return init + pair.second();
+		{
+		    @Override
+		    public Integer apply(int init, Pair<String, Integer> pair) {
+		        return init + pair.second();
 	    }
 	};
 
@@ -776,6 +777,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDQ0MjE1NSwtNDU3MDkwNzk2LDQ5Mj
+eyJoaXN0b3J5IjpbLTMzNTU2NTI5MywtNDU3MDkwNzk2LDQ5Mj
 AyOTA2NCw0NDEzOTg2NV19
 -->
