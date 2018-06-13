@@ -409,7 +409,7 @@ public class Index
       System.out.println(index);
    }
 }
-``` java
+``` 
 
 /*************************************************************************/
 //																		                                    //
@@ -434,12 +434,13 @@ public class Exercise
       System.out.println(words);
    }
 }
-
+```
 /*************************************************************************/
 //																		                                   //
 //                        Exercice 2 - Unité 2							             //
 //																		                                   //
 /*************************************************************************/	
+``` java
 class Collections 
 {
    public static <T> T[] toArray(Collection<T> coll, 
@@ -470,13 +471,14 @@ public class Exercise
       // wordArray[i].toUpperCase().
    }
 }
-
+``` 
 /*************************************************************************/
 //																		                                   //
 //                        Exercice 3 - Unité 2							             //
 //																		                                   //
 /*************************************************************************/	
-// TODO: Make this method receive and return an array.
+``` java
+/ TODO: Make this method receive and return an array.
 // Accept a constructor expression for constructing the 
 // returned array.
 
@@ -504,12 +506,13 @@ String[] wordsWithA = Util.filter(words, w -> w.contains("a"), String[]::new);
 
 //Way to display an array
 System.out.println(Arrays.toString(wordsWithA));
-
+``` 
 /*************************************************************************/
 //																		                                   //
 //                        Exercice 1 - Unité 3							             //
 //																		                                   //
 /*************************************************************************/	
+``` java
 public class Words
 {
    public static long distinctVowels(String str)
@@ -526,13 +529,14 @@ public class Words
                 .count();	//on compte
    }
 }
-
+``` 
 
 /*************************************************************************/
 //																		                                   //
 //                        Exercice 2 - Unité 3							             //
 //																		                                   //
 /*************************************************************************/	
+``` java
 public class Streams
 {
    public static void main(String[] args) throws IOException
@@ -560,12 +564,13 @@ public class Streams
 	      }   
    }
 }
-
+``` 
 /*************************************************************************/
 //																		                                   //
 //                        Exercice 3 - Unité 3							             //
 //																		                                   //
 /*************************************************************************/	
+``` java
 public class Streams
 {
    List<Pair<String, Long>> wordsWithManyVowels(Stream<String> words, int n)
@@ -580,14 +585,14 @@ public class Streams
          .collect(Collectors.toList());
    }
 }
-
+``` 
 
 /*************************************************************************/
 //																		                                    //
 //                        		Collections								                  //
 //																		                                    //
 /*************************************************************************/	
-
+``` java
 //Exemples avec des collections
 
 
@@ -595,7 +600,7 @@ public class Streams
 /*************************************************************************/
 //                       Exemples de Labdas								               //
 /*************************************************************************/	
-
+``` java
 //list = (0, 44 , 33) retourne e0,e44,o33
 public String getString(List<Integer> list) {
 	return list.stream()
@@ -784,6 +789,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg5MDMwOTcyLDQ5MjAyOTA2NCw0NDEzOT
-g2NV19
+eyJoaXN0b3J5IjpbLTU3NjI3MTk5MSw0OTIwMjkwNjQsNDQxMz
+k4NjVdfQ==
 -->
