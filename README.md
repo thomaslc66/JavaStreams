@@ -734,9 +734,13 @@ interface Predicatez
 
 interface Streams{
     public static Stream<Pair<Integer,Integer>> triangular(int max){
-        return Stream.iterate(Pair.of(1,1), (Pair<Integer,Integer> p) -> Pair.of(p.first() + 1, (p.second()-1) + p.first())).limit(max);
+        return Stream.iterate(
+	        Pair.of(1,1), //Graine (valeur de départ)
+	        (Pair<Integer,Integer> p) -> Pair.of(p.first() + 1, (p.second()-1) + p.first())).limit(max);
     }
 }
+```
+
 #### //                       Accumulator									                   //
 
 ``` java
@@ -789,6 +793,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzODY5MTkzLC0zMzU1NjUyOTMsLTQ1Nz
-A5MDc5Niw0OTIwMjkwNjQsNDQxMzk4NjVdfQ==
+eyJoaXN0b3J5IjpbMTk0ODQzMTA2NCwtMzM1NTY1MjkzLC00NT
+cwOTA3OTYsNDkyMDI5MDY0LDQ0MTM5ODY1XX0=
 -->
