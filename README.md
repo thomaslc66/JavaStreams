@@ -481,7 +481,7 @@ public class Exercise
 / TODO: Make this method receive and return an array.
 // Accept a constructor expression for constructing the 
 // returned array.
-// Function<T, R> { R apply(T args)
+// Function<T, R> { R apply(T args); }
 public class Util
 {
 	//First parameter of Function<What apply will take, What apply will return>
@@ -789,6 +789,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTE0NTcwMiw0OTIwMjkwNjQsNDQxMz
-k4NjVdfQ==
+eyJoaXN0b3J5IjpbLTE2NjYwODQ5NTIsNDkyMDI5MDY0LDQ0MT
+M5ODY1XX0=
 -->
