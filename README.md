@@ -574,7 +574,8 @@ public class Streams
 
 ``` java
 //Exemples avec des collections
-Collections.max(array, p -> p.length());
+Collections.max(opening, (s,t) -> s.length() - t.length());
+Collections.max(opening,Comparator.comparing(String::length));
 ``` 
 
 
@@ -794,6 +795,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5MTM1MDk2LC0zMzU1NjUyOTMsLTQ1Nz
+eyJoaXN0b3J5IjpbNDQxMTQxMDM5LC0zMzU1NjUyOTMsLTQ1Nz
 A5MDc5Niw0OTIwMjkwNjQsNDQxMzk4NjVdfQ==
 -->
