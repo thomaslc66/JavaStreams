@@ -554,7 +554,8 @@ public class Streams
 	  		//On souhaite récupérer une liste de string depuis le Stream lineStream
 	  		//on filtre les mots ayant 5 voyelles distinctes
 	        List<String> result = lineStream.filter(s -> Words.distinctVowels(s) == 5)
-							        //on trie grace a sorted(Comparator.comparing( Fonction de tri )) Ici la longueur
+							        //on trie grace a sorted(Comparator.comparing( Fonction de tri )) 
+							        //Ici par la longueur
 							        .sorted(Comparator.comparing(String::length))
 							        //on limite au 20 premier résultat
 							        .limit(20)
@@ -565,11 +566,9 @@ public class Streams
    }
 }
 ``` 
-/*************************************************************************/
-//																		                                   //
+
 //                        Exercice 3 - Unité 3							             //
-//																		                                   //
-/*************************************************************************/	
+
 ``` java
 public class Streams
 {
@@ -587,19 +586,16 @@ public class Streams
 }
 ``` 
 
-/*************************************************************************/
-//																		                                    //
 //                        		Collections								                  //
-//																		                                    //
-/*************************************************************************/	
+
 ``` java
 //Exemples avec des collections
 Collections.max(array, p -> p.length());
 ``` 
 
-/*************************************************************************/
+
 //                       Exemples de Labdas								               //
-/*************************************************************************/	
+
 ``` java
 //list = (0, 44 , 33) retourne e0,e44,o33
 public String getString(List<Integer> list) {
@@ -797,6 +793,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDM1Nzc2NjIsNDkyMDI5MDY0LDQ0MT
-M5ODY1XX0=
+eyJoaXN0b3J5IjpbLTIxMzQ2MTk5NSw0OTIwMjkwNjQsNDQxMz
+k4NjVdfQ==
 -->
