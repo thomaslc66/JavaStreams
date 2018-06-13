@@ -657,7 +657,7 @@ array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]
  												 .collect(Collectors.toList());
 
  //we need a method that construct the triangular stream
- interface Strams{
+ interface Streams{
 
  	public static Stream<Pair<Integer, Integer>> triangular(int max){
  		return Stream.iterate(Pair.of(1,1), //Iterate prend une valeur de départ
@@ -792,6 +792,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3ODQ3MDM0LDQ5MjAyOTA2NCw0NDEzOT
-g2NV19
+eyJoaXN0b3J5IjpbLTI0NDUxNzkzMyw0OTIwMjkwNjQsNDQxMz
+k4NjVdfQ==
 -->
