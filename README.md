@@ -608,10 +608,11 @@ public String getString(List<Integer> list) {
                 //joining retourne une string séparé par ici une virgule
                 .collect(Collectors.joining(",")); 
 }
-
+``` 
 /*************************************************************************/
 //                       Longest word 									                 //
 /*************************************************************************/	
+``` java
 //opening est une liste de string
 //Lambda
 Collections.max(opening, (s,t) -> s.length() - t.length());
@@ -621,10 +622,11 @@ Collections.max(opening,Comparator.comparing(String::length));
 opening.stream()
        .sorted(Comparator.comparing(String::length).reversed())
        .findFirst().get();	//get retourne un string
-
+``` 
 /*************************************************************************/
 //                       Filter using predicate	greater < 5				       //
 /*************************************************************************/	
+``` java
 opening.stream()
 	   .filter(Predicates.greater(String::length,5)) //we pass string.length to func
 	   .distinct()
@@ -646,17 +648,18 @@ System.out.println(Arrays.toString(array));
 //----Same without predicates interface
 array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]::new);
 
-
+``` 
 /*************************************************************************/
 //               Triangular method	- Iterate with interface 			       //
 /*************************************************************************/	
+ ``` java
  List<Pair<Integer, Integer>> triangles = Streams.triangular(7) //limite a 7
  												 .collect(Collectors.toList());
 
  //we need a method that construct the triangular stream
  interface Strams{
 
- 	public static Streams<Pair<Integer, Integer>> triangular(int max){
+ 	public static Stream<Pair<Integer, Integer>> triangular(int max){
  		return Stream.iterate(Pair.of(1,1), //Iterate prend une valeur de départ
  							//en second parametre prend les itérations à faire
  							 (Pair<Integer, Integer> p) -> Pair.of(p.first() + 1, 
@@ -665,7 +668,7 @@ array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]
  	}
  }
 
-
+``` 
 /*************************************************************************/
 //               Trier les valeurs pair par nom 						              //
 /*************************************************************************/	
@@ -789,6 +792,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3OTc1ODk0Nyw0OTIwMjkwNjQsNDQxMz
-k4NjVdfQ==
+eyJoaXN0b3J5IjpbNzI3ODQ3MDM0LDQ5MjAyOTA2NCw0NDEzOT
+g2NV19
 -->
