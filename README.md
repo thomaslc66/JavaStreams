@@ -507,18 +507,16 @@ String[] wordsWithA = Util.filter(words, w -> w.contains("a"), String[]::new);
 //Way to display an array
 System.out.println(Arrays.toString(wordsWithA));
 ``` 
-/*************************************************************************/
-//																		                                   //
+
 //                        Exercice 1 - Unité 3							             //
-//																		                                   //
-/*************************************************************************/	
+
 ``` java
 public class Words
 {
    public static long distinctVowels(String str)
    {
         return Stream.of(str.split("")) //on découpe chaque lettres
-        		//on prend un lettre et on lui enlève ces accents 
+        		//on prend un lettre et on lui enlève ses accents 
         		//normalize retourne un tableau pour à [a,`]
                 .map(c -> Normalizer.normalize(c,Normalizer.Form.NFD)
                                     .substring(0,1))
@@ -531,11 +529,8 @@ public class Words
 }
 ``` 
 
-/*************************************************************************/
-//																		                                   //
 //                        Exercice 2 - Unité 3							             //
-//																		                                   //
-/*************************************************************************/	
+	
 ``` java
 public class Streams
 {
@@ -794,6 +789,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTQ3Mzg1LDQ5MjAyOTA2NCw0NDEzOT
-g2NV19
+eyJoaXN0b3J5IjpbLTEyOTkzNjY2MDUsNDkyMDI5MDY0LDQ0MT
+M5ODY1XX0=
 -->
