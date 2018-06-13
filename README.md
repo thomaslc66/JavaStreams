@@ -354,7 +354,7 @@ stream.sorted(
 
 ## Exercices et exemples:
 
-//                        Exercice 1 - Unité 1							              //
+#### //                        Exercice 1 - Unité 1							              //
 // Garde les mots plus grand que 20, grâce à la commande removeIf()
 ```java
 public class Exercise
@@ -369,7 +369,7 @@ public class Exercise
 ```
 
 
-//                        Exercice 2 - Unité 1							              //
+#### //                        Exercice 2 - Unité 1							              //
 
 ``` java
 List<String> words = Files.readAllLines(Paths.get("pays.txt")); // lit notre fichier
@@ -383,7 +383,7 @@ words.removeIf(w ->
 );
 ```
 
-//                        Exercice 3 - Unité 1							              //
+#### //                        Exercice 3 - Unité 1							              //
 
 ``` java
 public class Index
@@ -409,7 +409,7 @@ public class Index
 }
 ``` 
 
-//                        Exercice 1 - Unité 2							              //
+#### //                        Exercice 1 - Unité 2							              //
 					
 ``` java
 class Words
@@ -430,7 +430,7 @@ public class Exercise
    }
 }
 ```
-//                        Exercice 2 - Unité 2							             //
+#### //                        Exercice 2 - Unité 2							             //
 
 ``` java
 class Collections 
@@ -463,7 +463,7 @@ public class Exercise
 }
 ``` 
 
-//                        Exercice 3 - Unité 2							             //
+#### //                        Exercice 3 - Unité 2							             //
 
 ``` java
 // TODO: Make this method receive and return an array.
@@ -496,7 +496,7 @@ String[] wordsWithA = Util.filter(words, w -> w.contains("a"), String[]::new);
 System.out.println(Arrays.toString(wordsWithA));
 ``` 
 
-//                        Exercice 1 - Unité 3							             //
+#### //                        Exercice 1 - Unité 3							             //
 
 ``` java
 public class Words
@@ -517,7 +517,7 @@ public class Words
 }
 ``` 
 
-//                        Exercice 2 - Unité 3							             //
+#### //                        Exercice 2 - Unité 3							             //
 	
 ``` java
 public class Streams
@@ -551,7 +551,7 @@ public class Streams
 }
 ``` 
 
-//                        Exercice 3 - Unité 3							             //
+#### //                        Exercice 3 - Unité 3							             //
 
 ``` java
 public class Streams
@@ -570,7 +570,7 @@ public class Streams
 }
 ``` 
 
-//                        		Collections								                  //
+#### //                        		Collections								                  //
 
 ``` java
 //Exemples avec des collections
@@ -578,7 +578,7 @@ Collections.max(array, p -> p.length());
 ``` 
 
 
-//                       Exemples de Labdas								               //
+#### //                       Exemples de Labdas								               //
 
 ``` java
 //list = (0, 44 , 33) retourne e0,e44,o33
@@ -590,7 +590,7 @@ public String getString(List<Integer> list) {
 }
 ``` 
 
-//                       Longest word 									                 //
+#### //                       Longest word 									                 //
 
 ``` java
 //opening est une liste de string
@@ -604,7 +604,7 @@ opening.stream()
        .findFirst().get();	//get retourne un string
 ``` 
 
-//                       Filter using predicate	greater < 5				       //
+#### //                       Filter using predicate	greater < 5				       //
 
 ``` java
 opening.stream()
@@ -630,7 +630,7 @@ array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]
 
 ``` 
 
-//               Triangular method	- Iterate with interface 			       //
+#### //               Triangular method	- Iterate with interface 			       //
 
  ``` java
  List<Pair<Integer, Integer>> triangles = Streams.triangular(7) //limite a 7
@@ -777,6 +777,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTAwNDkxMzUsNDkyMDI5MDY0LDQ0MT
-M5ODY1XX0=
+eyJoaXN0b3J5IjpbMjI2OTYzNDYzLDQ5MjAyOTA2NCw0NDEzOT
+g2NV19
 -->
