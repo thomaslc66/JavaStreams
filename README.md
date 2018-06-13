@@ -353,11 +353,10 @@ stream.sorted(
 ---
 
 ## Exercices et exemples:
-/*************************************************************************/
-//																		                                    //
+
 //                        Exercice 1 - Unité 1							              //
-//																		                                    //
-/*************************************************************************/	
+// Supprime
+```java
 public class Exercise
 {
    public static void main(String[] args) throws IOException
@@ -367,7 +366,7 @@ public class Exercise
       System.out.println(words);
    }
 } 
-
+```
 
 /*************************************************************************/
 //																		                                    //
@@ -782,5 +781,5 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDE4NDI4MTgsNDQxMzk4NjVdfQ==
+eyJoaXN0b3J5IjpbMTYxMjMxNjUxNSw0NDEzOTg2NV19
 -->
