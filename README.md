@@ -387,6 +387,7 @@ words.removeIf(w ->
 //                        Exercice 3 - Unité 1							              //
 //																		                                    //
 /*************************************************************************/	
+``` java
 public class Index
 {
    public static void main(String[] args) throws IOException
@@ -408,12 +409,14 @@ public class Index
       System.out.println(index);
    }
 }
+``` java
 
 /*************************************************************************/
 //																		                                    //
 //                        Exercice 1 - Unité 2							              //
 //																		                                    //
 /*************************************************************************/								
+``` java
 class Words
 {	//static method to access it from the class name
    public static int vowels(String w)
@@ -781,5 +784,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkyMDI5MDY0LDQ0MTM5ODY1XX0=
+eyJoaXN0b3J5IjpbNTg5MDMwOTcyLDQ5MjAyOTA2NCw0NDEzOT
+g2NV19
 -->
