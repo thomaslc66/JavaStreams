@@ -594,8 +594,8 @@ public class Streams
 /*************************************************************************/	
 ``` java
 //Exemples avec des collections
-
-
+Collections.max(array, p -> p.length());
+``` 
 
 /*************************************************************************/
 //                       Exemples de Labdas								               //
@@ -789,6 +789,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NjI3MTk5MSw0OTIwMjkwNjQsNDQxMz
+eyJoaXN0b3J5IjpbMTA3OTc1ODk0Nyw0OTIwMjkwNjQsNDQxMz
 k4NjVdfQ==
 -->
