@@ -537,14 +537,15 @@ public class Streams
 		try (Stream<String> lineStream = Files.lines(Paths.get(filename))){
 	  		//On souhaite récupérer une liste de string depuis le Stream lineStream
 	  		//on filtre les mots ayant 5 voyelles distinctes
-	        List<String> result = lineStream.filter(s -> Words.distinctVowels(s) == 5)
-							        //on trie grace a sorted(Comparator.comparing( Fonction de tri )) 
-							        //Ici par la longueur (String::length)
-							        .sorted(Comparator.comparing(String::length))
-							        //on limite au 20 premier résultat
-							        .limit(20)
-							        //on collect (Collectors) En toList toArray .. etc
-							        .collect(Collectors.toList());
+	        List<String> result 
+	        = lineStream.filter(s -> Words.distinctVowels(s) == 5)
+				        //on trie grace a sorted(Comparator.comparing( Fonction de tri )) 
+				        //Ici par la longueur (String::length)
+				        .sorted(Comparator.comparing(String::length))
+				        //on limite au 20 premier résultat
+				        .limit(20)
+				        //on collect (Collectors) En toList toArray .. etc
+				        .collect(Collectors.toList());
 	         System.out.println(result);
 	      }   
    }
@@ -797,6 +798,7 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjc3NTU0MywtMzM1NTY1MjkzLC00NT
-cwOTA3OTYsNDkyMDI5MDY0LDQ0MTM5ODY1XX0=
+eyJoaXN0b3J5IjpbLTIwOTYwNzQ2NDcsMTIwNjc3NTU0MywtMz
+M1NTY1MjkzLC00NTcwOTA3OTYsNDkyMDI5MDY0LDQ0MTM5ODY1
+XX0=
 -->
