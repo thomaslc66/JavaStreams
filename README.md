@@ -382,11 +382,9 @@ words.removeIf(w ->
     }
 );
 ```
-/*************************************************************************/
-//																		                                    //
+
 //                        Exercice 3 - Unité 1							              //
-//																		                                    //
-/*************************************************************************/	
+
 ``` java
 public class Index
 {
@@ -410,7 +408,6 @@ public class Index
    }
 }
 ``` 
-
 
 //                        Exercice 1 - Unité 2							              //
 					
@@ -780,6 +777,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzA3NzI1NzMsNDkyMDI5MDY0LDQ0MT
+eyJoaXN0b3J5IjpbLTEzNTAwNDkxMzUsNDkyMDI5MDY0LDQ0MT
 M5ODY1XX0=
 -->
