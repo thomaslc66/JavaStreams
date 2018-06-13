@@ -355,7 +355,7 @@ stream.sorted(
 ## Exercices et exemples:
 
 //                        Exercice 1 - Unité 1							              //
-// Supprime
+// Garde les mots plus grand que 20, grâce à la commande removeIf()
 ```java
 public class Exercise
 {
@@ -781,5 +781,5 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjMxNjUxNSw0NDEzOTg2NV19
+eyJoaXN0b3J5IjpbMTk2OTcxMDUxMSw0NDEzOTg2NV19
 -->
