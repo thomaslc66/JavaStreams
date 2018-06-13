@@ -725,8 +725,7 @@ Map.
 ``` 
 #### Predicate & Streams
 ``` java
-interface Predicatez
-{
+interface Predicatez{
      public static <T> Predicate<T> greater(Function<T, Integer> f, int n) {
         return p -> f.apply(p) > n;
      }
@@ -795,6 +794,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjE5Nzc4MTgsLTMzNTU2NTI5MywtND
-U3MDkwNzk2LDQ5MjAyOTA2NCw0NDEzOTg2NV19
+eyJoaXN0b3J5IjpbODg5MTM1MDk2LC0zMzU1NjUyOTMsLTQ1Nz
+A5MDc5Niw0OTIwMjkwNjQsNDQxMzk4NjVdfQ==
 -->
