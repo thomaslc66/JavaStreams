@@ -727,12 +727,13 @@ Map.
 ``` 
 #### Predicate & Streams
 ``` java
-interface Predicatez{
+interface Predicates{
      public static <T> Predicate<T> greater(Function<T, Integer> f, int n) {
         return p -> f.apply(p) > n;
      }
 }
 
+//Interface Streams mais la méthode retourne un stream
 interface Streams{
     public static Stream<Pair<Integer,Integer>> triangular(int max){
         return Stream.iterate(
@@ -796,6 +797,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MDAyMzM4NCwtMzM1NTY1MjkzLC00NT
+eyJoaXN0b3J5IjpbMTIwNjc3NTU0MywtMzM1NTY1MjkzLC00NT
 cwOTA3OTYsNDkyMDI5MDY0LDQ0MTM5ODY1XX0=
 -->
