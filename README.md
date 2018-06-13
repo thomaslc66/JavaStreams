@@ -672,6 +672,7 @@ array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]
 /*************************************************************************/
 //               Trier les valeurs pair par nom 						              //
 /*************************************************************************/	
+``` java
 System.out.println(list.stream()
                     .filter((Pair<String, Integer> p) -> p.second() % 2 == 0)
                     .sorted(Comparator.comparing(Pair::second))
@@ -685,11 +686,11 @@ System.out.println(list.stream()
         .sorted(Comparator.comparing((Pair<String, Integer> p) -> p.second()))
         .map((Pair<String,Integer> p) -> p.first())
         .collect(Collectors.toList()));
-
+``` 
 /*************************************************************************/
 //               Trier les valeurs grâce à une interface				          //
 /*************************************************************************/	
-
+``` java
 public class Filterable{
 
     public static <T> List<T> filter(List<T> mylist, Predicate<T> predicate){
@@ -705,11 +706,11 @@ public class Filterable{
 
 List<Dragon> oldest = Filterable.filter(dragons, d -> d.color() == Dragon.Color.Red 
 														&& d.age() >= 4000);
-
+``` 
 /*************************************************************************/
 //                       Summary et Moyennes							               //
 /*************************************************************************/
-
+``` java
 list.stream()
   .mapToInt(i -> i) //lambda basique
   .average()
@@ -721,12 +722,13 @@ collectionKids.stream()
                 .getAverage();
 
 
-
+``` 
 
 
 /*************************************************************************/
 //                       List vs Maps									                    //
 /*************************************************************************/
+``` java
 List.
 	forEach(Iterables)
 	//ne marche pas sur Array.asList
@@ -741,11 +743,12 @@ Map.
 	computeIfAbsent()
 	merge()
 	replaceAll()
-
+``` 
 
 /*************************************************************************/
 //                       Accumulator									                   //
 /*************************************************************************/
+``` java
 //Accumulator sum, lambda
 Accumulator.accumulate(list, 0, (r, n) -> r + n.second()));
 
@@ -788,10 +791,10 @@ FunctionAccumulateur<Pair<String, Integer>, Integer> f = new FunctionAccumulateu
 System.out.println(
         Accumulator.accumulate(list,0 , f)
 );
-
+```
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NDUxNzkzMyw0OTIwMjkwNjQsNDQxMz
-k4NjVdfQ==
+eyJoaXN0b3J5IjpbLTE0MDEzMzIxMjcsNDkyMDI5MDY0LDQ0MT
+M5ODY1XX0=
 -->
