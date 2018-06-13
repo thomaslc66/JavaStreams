@@ -723,8 +723,20 @@ Map.
 	merge()
 	replaceAll()
 ``` 
+#### Predicate & Streams
+``` java
+interface Predicatez
+{
+     public static <T> Predicate<T> greater(Function<T, Integer> f, int n) {
+        return p -> f.apply(p) > n;
+     }
+}
 
-
+interface Streams{
+    public static Stream<Pair<Integer,Integer>> triangular(int max){
+        return Stream.iterate(Pair.of(1,1), (Pair<Integer,Integer> p) -> Pair.of(p.first() + 1, (p.second()-1) + p.first())).limit(max);
+    }
+}
 #### //                       Accumulator									                   //
 
 ``` java
@@ -777,6 +789,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTU2NTI5MywtNDU3MDkwNzk2LDQ5Mj
-AyOTA2NCw0NDEzOTg2NV19
+eyJoaXN0b3J5IjpbMjQzODY5MTkzLC0zMzU1NjUyOTMsLTQ1Nz
+A5MDc5Niw0OTIwMjkwNjQsNDQxMzk4NjVdfQ==
 -->
