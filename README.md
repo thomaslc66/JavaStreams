@@ -555,7 +555,7 @@ public class Streams
 	  		//on filtre les mots ayant 5 voyelles distinctes
 	        List<String> result = lineStream.filter(s -> Words.distinctVowels(s) == 5)
 							        //on trie grace a sorted(Comparator.comparing( Fonction de tri )) 
-							        //Ici par la longueur
+							        //Ici par la longueur (String::length)
 							        .sorted(Comparator.comparing(String::length))
 							        //on limite au 20 premier résultat
 							        .limit(20)
@@ -793,6 +793,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQ2MTk5NSw0OTIwMjkwNjQsNDQxMz
-k4NjVdfQ==
+eyJoaXN0b3J5IjpbLTE1ODE0NjU0ODksNDkyMDI5MDY0LDQ0MT
+M5ODY1XX0=
 -->
