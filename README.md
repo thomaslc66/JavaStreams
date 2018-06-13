@@ -731,9 +731,9 @@ Map.
 //Accumulator sum, lambda
 Accumulator.accumulate(list, 0, (r, n) -> r + n.second()));
 
-//on redefinit un interface avec la méthode static accumulate qui va prendre une liste de Pair<T, Integer> 
+//on definit un interface et une méthode static accumulate qui prendr une liste de Pair<T, Integer> 
 //un int de départ
-//une Function qui prendre des Pair<T, Integer> en entree et retournera un Integer en sortie
+//une FunctionAcc ou T = Pair<T, Integer> en entree et R (retour) retournera un Integer en sortie
 interface Accumulator{
     public static <T> int accumulate(List<T> list, int init, FunctionAcc<T, Integer> f ){
         int sum = init;
@@ -776,6 +776,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzMzNjk5MjEsNDkyMDI5MDY0LDQ0MT
-M5ODY1XX0=
+eyJoaXN0b3J5IjpbLTQ1NzA5MDc5Niw0OTIwMjkwNjQsNDQxMz
+k4NjVdfQ==
 -->
