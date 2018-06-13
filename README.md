@@ -649,7 +649,7 @@ array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]
  }
 ``` 
 
-//               Trier les valeurs pair par nom 						              //
+#### //               Trier les valeurs pair par nom 						              //
 
 ``` java
 System.out.println(list.stream()
@@ -667,7 +667,7 @@ System.out.println(list.stream()
         .collect(Collectors.toList()));
 ``` 
 
-//               Trier les valeurs grâce à une interface				          //
+#### //               Trier les valeurs grâce à une interface				          //
 
 ``` java
 public class Filterable{
@@ -687,7 +687,7 @@ List<Dragon> oldest = Filterable.filter(dragons, d -> d.color() == Dragon.Color.
 														&& d.age() >= 4000);
 ``` 
 
-//                       Summary et Moyennes							               //
+#### //                       Summary et Moyennes							               //
 
 ``` java
 list.stream()
@@ -705,7 +705,7 @@ collectionKids.stream()
 
 
 
-//                       List vs Maps									                    //
+#### //                       List vs Maps									                    //
 
 ``` java
 List.
@@ -725,14 +725,13 @@ Map.
 ``` 
 
 
-//                       Accumulator									                   //
+#### //                       Accumulator									                   //
 
 ``` java
 //Accumulator sum, lambda
 Accumulator.accumulate(list, 0, (r, n) -> r + n.second()));
 
-//on redefinit un interface avec la méthode static accumulate
-//qui va prendre une liste de Pair<T, Integer> 
+//on redefinit un interface avec la méthode static accumulate qui va prendre une liste de Pair<T, Integer> 
 //un int de départ
 //une Function qui prendre des Pair<T, Integer> en entree et retournera un Integer en sortie
 interface Accumulator{
@@ -777,6 +776,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI2OTYzNDYzLDQ5MjAyOTA2NCw0NDEzOT
-g2NV19
+eyJoaXN0b3J5IjpbLTIxMzMzNjk5MjEsNDkyMDI5MDY0LDQ0MT
+M5ODY1XX0=
 -->
