@@ -544,6 +544,7 @@ public class Streams
 		Scanner in = new Scanner(System.in);
 		String filename = in.next();
 		try (Stream<String> lineStream =  Files.lines(Paths.get(filename))){
+			//Ici on retourne le nombre de mot avec 5 voyelles
 			long count = lineStream
 				.filter(s -> Words.distinctVowels(s) == 5)
 				.count();
@@ -793,6 +794,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODE0NjU0ODksNDkyMDI5MDY0LDQ0MT
-M5ODY1XX0=
+eyJoaXN0b3J5IjpbMTk0OTQ3Mzg1LDQ5MjAyOTA2NCw0NDEzOT
+g2NV19
 -->
