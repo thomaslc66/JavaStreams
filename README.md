@@ -789,7 +789,7 @@ FunctionAccumulateur<Pair<String, Integer>, Integer> f
 	    }
 	};
 
-
+//Ici on passe notre fonction à l'Accumulator
 System.out.println(
         Accumulator.accumulate(list,0 , f)
 );
@@ -798,6 +798,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxMTY3MDA3LDQ5MjAyOTA2NCw0NDEzOT
-g2NV19
+eyJoaXN0b3J5IjpbLTY2ODQ1MjQ4NCw0OTIwMjkwNjQsNDQxMz
+k4NjVdfQ==
 -->
