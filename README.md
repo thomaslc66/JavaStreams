@@ -780,21 +780,24 @@ int sum = Accumulator.accumulate(list, 0, new FunctionAccumulateur<Pair<String, 
 });
 
 //ou ecrire notre Function en dehors et la passe a l'accumulator
-FunctionAccumulateur<Pair<String, Integer>, Integer> f = new FunctionAccumulateur<Pair<String, Integer>, Integer>() {
-    @Override
-    public Integer apply(int init, Pair<String, Integer> pair) {
-        return init + pair.second();
-    }
-};
+FunctionAccumulateur<Pair<String, Integer>, Integer> f 
+				= new FunctionAccumulateur<Pair<String, Integer>, Integer>() 
+	{
+	    @Override
+	    public Integer apply(int init, Pair<String, Integer> pair) {
+	        return init + pair.second();
+	    }
+	};
 
 
 System.out.println(
         Accumulator.accumulate(list,0 , f)
 );
 ```
+
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDEzMzIxMjcsNDkyMDI5MDY0LDQ0MT
-M5ODY1XX0=
+eyJoaXN0b3J5IjpbOTIxMTY3MDA3LDQ5MjAyOTA2NCw0NDEzOT
+g2NV19
 -->
