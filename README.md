@@ -374,12 +374,13 @@ public class Exercise
 ``` java
 List<String> words = Files.readAllLines(Paths.get("pays.txt")); // lit notre fichier
 words.removeIf(w -> 
- { 
-    int taille = w.length();
-    String first = w.substring(0,1);
-    String last = w.substring(taille-1, taille);
-    return !first.equalsIgnoreCase(last);
- });
+	{ 
+	    int taille = w.length();
+	    String first = w.substring(0,1);
+	    String last = w.substring(taille-1, taille);
+	    return !first.equalsIgnoreCase(last);
+    }
+);
 ```
 /*************************************************************************/
 //																		                                    //
@@ -780,5 +781,5 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MDg0NzcwLDQ0MTM5ODY1XX0=
+eyJoaXN0b3J5IjpbNDkyMDI5MDY0LDQ0MTM5ODY1XX0=
 -->
