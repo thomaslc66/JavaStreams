@@ -411,11 +411,9 @@ public class Index
 }
 ``` 
 
-/*************************************************************************/
-//																		                                    //
+
 //                        Exercice 1 - Unité 2							              //
-//																		                                    //
-/*************************************************************************/								
+					
 ``` java
 class Words
 {	//static method to access it from the class name
@@ -435,11 +433,8 @@ public class Exercise
    }
 }
 ```
-/*************************************************************************/
-//																		                                   //
 //                        Exercice 2 - Unité 2							             //
-//																		                                   //
-/*************************************************************************/	
+
 ``` java
 class Collections 
 {
@@ -460,8 +455,6 @@ public class Exercise
    {
       List<String> words = Files.readAllLines(Paths.get("pays.txt"));
 
-      // TODO: Turn words into an array of type String[].
-
       String[] wordArray = Collections.toArray(words, String[]::new); //create new array of strings
       Arrays.sort(wordArray);
       for (int i = 0; i < 10; i++)
@@ -472,13 +465,11 @@ public class Exercise
    }
 }
 ``` 
-/*************************************************************************/
-//																		                                   //
+
 //                        Exercice 3 - Unité 2							             //
-//																		                                   //
-/*************************************************************************/	
+
 ``` java
-/ TODO: Make this method receive and return an array.
+// TODO: Make this method receive and return an array.
 // Accept a constructor expression for constructing the 
 // returned array.
 // Function<T, R> { R apply(T args); }
@@ -789,6 +780,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjYwODQ5NTIsNDkyMDI5MDY0LDQ0MT
+eyJoaXN0b3J5IjpbLTIwNzA3NzI1NzMsNDkyMDI5MDY0LDQ0MT
 M5ODY1XX0=
 -->
