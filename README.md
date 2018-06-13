@@ -609,9 +609,9 @@ public String getString(List<Integer> list) {
                 .collect(Collectors.joining(",")); 
 }
 ``` 
-/*************************************************************************/
+
 //                       Longest word 									                 //
-/*************************************************************************/	
+
 ``` java
 //opening est une liste de string
 //Lambda
@@ -623,9 +623,9 @@ opening.stream()
        .sorted(Comparator.comparing(String::length).reversed())
        .findFirst().get();	//get retourne un string
 ``` 
-/*************************************************************************/
+
 //                       Filter using predicate	greater < 5				       //
-/*************************************************************************/	
+
 ``` java
 opening.stream()
 	   .filter(Predicates.greater(String::length,5)) //we pass string.length to func
@@ -649,9 +649,9 @@ System.out.println(Arrays.toString(array));
 array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]::new);
 
 ``` 
-/*************************************************************************/
+
 //               Triangular method	- Iterate with interface 			       //
-/*************************************************************************/	
+
  ``` java
  List<Pair<Integer, Integer>> triangles = Streams.triangular(7) //limite a 7
  												 .collect(Collectors.toList());
@@ -667,11 +667,10 @@ array = opening.stream().filter(s -> s.length() > 5).distinct().toArray(String[]
  					 .limit(max);
  	}
  }
-
 ``` 
-/*************************************************************************/
+
 //               Trier les valeurs pair par nom 						              //
-/*************************************************************************/	
+
 ``` java
 System.out.println(list.stream()
                     .filter((Pair<String, Integer> p) -> p.second() % 2 == 0)
@@ -687,9 +686,9 @@ System.out.println(list.stream()
         .map((Pair<String,Integer> p) -> p.first())
         .collect(Collectors.toList()));
 ``` 
-/*************************************************************************/
+
 //               Trier les valeurs grâce à une interface				          //
-/*************************************************************************/	
+
 ``` java
 public class Filterable{
 
@@ -707,9 +706,9 @@ public class Filterable{
 List<Dragon> oldest = Filterable.filter(dragons, d -> d.color() == Dragon.Color.Red 
 														&& d.age() >= 4000);
 ``` 
-/*************************************************************************/
+
 //                       Summary et Moyennes							               //
-/*************************************************************************/
+
 ``` java
 list.stream()
   .mapToInt(i -> i) //lambda basique
@@ -725,9 +724,9 @@ collectionKids.stream()
 ``` 
 
 
-/*************************************************************************/
+
 //                       List vs Maps									                    //
-/*************************************************************************/
+
 ``` java
 List.
 	forEach(Iterables)
@@ -745,9 +744,9 @@ Map.
 	replaceAll()
 ``` 
 
-/*************************************************************************/
+
 //                       Accumulator									                   //
-/*************************************************************************/
+
 ``` java
 //Accumulator sum, lambda
 Accumulator.accumulate(list, 0, (r, n) -> r + n.second()));
@@ -798,6 +797,6 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODQ1MjQ4NCw0OTIwMjkwNjQsNDQxMz
-k4NjVdfQ==
+eyJoaXN0b3J5IjpbLTE0MDM1Nzc2NjIsNDkyMDI5MDY0LDQ0MT
+M5ODY1XX0=
 -->
