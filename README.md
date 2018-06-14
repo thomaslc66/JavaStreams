@@ -806,11 +806,30 @@ System.out.println(
         Accumulator.accumulate(list,0 , f)
 );
 ```
-
+#### Interface Filterable
+```java
+//Sans Compartor, Streams ou Collections retourne les plus vieux Dragons
+public class Filterable
+{
+   public static <T> List<T> filter(List<T> list, Predicate<T>p)
+   {
+     // version one-liner, qui ne respecte pas la consigne (pas de Stream ni Collectors)
+     // return list.stream().filter(p).collect(Collectors.toList());
+     
+     // version nettement plus moche, qui respecte la consigne.
+     List<T> copy = new LinkedList<T>();
+     copy.addAll(list);
+     copy.removeIf(p.negate());
+     return copy;
+   }
+  
+}
+```
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNjg4ODY4NywxNDM5MjQzMzQyLC00Mz
-kyNjI3NTEsLTIwOTYwNzQ2NDcsMTIwNjc3NTU0MywtMzM1NTY1
-MjkzLC00NTcwOTA3OTYsNDkyMDI5MDY0LDQ0MTM5ODY1XX0=
+eyJoaXN0b3J5IjpbMjA2OTk1MzcxLDExMTY4ODg2ODcsMTQzOT
+I0MzM0MiwtNDM5MjYyNzUxLC0yMDk2MDc0NjQ3LDEyMDY3NzU1
+NDMsLTMzNTU2NTI5MywtNDU3MDkwNzk2LDQ5MjAyOTA2NCw0ND
+EzOTg2NV19
 -->
