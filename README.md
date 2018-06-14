@@ -409,7 +409,7 @@ public class Index
 }
 ``` 
 
-
+#### //                        Exercice 4 - Unité 1							              //
 ```java
  index.merge(word, 
              new TreeSet<>(Arrays.asList(line)), 
@@ -808,7 +808,7 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODExODAzNjEsLTQzOTI2Mjc1MSwtMj
-A5NjA3NDY0NywxMjA2Nzc1NTQzLC0zMzU1NjUyOTMsLTQ1NzA5
-MDc5Niw0OTIwMjkwNjQsNDQxMzk4NjVdfQ==
+eyJoaXN0b3J5IjpbMTQzOTI0MzM0MiwtNDM5MjYyNzUxLC0yMD
+k2MDc0NjQ3LDEyMDY3NzU1NDMsLTMzNTU2NTI5MywtNDU3MDkw
+Nzk2LDQ5MjAyOTA2NCw0NDEzOTg2NV19
 -->
