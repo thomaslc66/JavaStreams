@@ -819,7 +819,7 @@ public class Filterable
      // version nettement plus moche, qui respecte la consigne.
      List<T> copy = new LinkedList<T>();
      copy.addAll(list);
-     copy.removeIf(p.negate());
+     copy.removeIf(p.negate()); //on enlève si ca ne respecte pas le predicate
      return copy;
    }
   
@@ -828,8 +828,8 @@ public class Filterable
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2OTk1MzcxLDExMTY4ODg2ODcsMTQzOT
-I0MzM0MiwtNDM5MjYyNzUxLC0yMDk2MDc0NjQ3LDEyMDY3NzU1
-NDMsLTMzNTU2NTI5MywtNDU3MDkwNzk2LDQ5MjAyOTA2NCw0ND
-EzOTg2NV19
+eyJoaXN0b3J5IjpbLTIwMTA0ODMzNzAsMTExNjg4ODY4NywxND
+M5MjQzMzQyLC00MzkyNjI3NTEsLTIwOTYwNzQ2NDcsMTIwNjc3
+NTU0MywtMzM1NTY1MjkzLC00NTcwOTA3OTYsNDkyMDI5MDY0LD
+Q0MTM5ODY1XX0=
 -->
