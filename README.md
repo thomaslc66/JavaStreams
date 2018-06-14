@@ -798,7 +798,7 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYwNzQ2NDcsMTIwNjc3NTU0MywtMz
-M1NTY1MjkzLC00NTcwOTA3OTYsNDkyMDI5MDY0LDQ0MTM5ODY1
-XX0=
+eyJoaXN0b3J5IjpbLTQzOTI2Mjc1MSwtMjA5NjA3NDY0NywxMj
+A2Nzc1NTQzLC0zMzU1NjUyOTMsLTQ1NzA5MDc5Niw0OTIwMjkw
+NjQsNDQxMzk4NjVdfQ==
 -->
