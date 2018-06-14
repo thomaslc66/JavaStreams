@@ -698,8 +698,9 @@ public class Filterable{
     }
 }
 
-List<Dragon> oldest = Filterable.filter(dragons, d -> d.color() == Dragon.Color.Red 
-														&& d.age() >= 4000);
+List<Dragon> oldest = Filterable.filter(dragons, 
+										d -> d.color() == Dragon.Color.Red 
+										&& d.age() >= 4000);
 ``` 
 
 #### //                       Summary et Moyennes							               //
@@ -714,8 +715,6 @@ collectionKids.stream()
                 .mapToInt(t -> t.age) //toujours fournir une lambda 
                 .summaryStatistics() //.getCount() .getMax() .getSum()
                 .getAverage();
-
-
 ``` 
 
 
@@ -828,8 +827,8 @@ public class Filterable
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTA0ODMzNzAsMTExNjg4ODY4NywxND
-M5MjQzMzQyLC00MzkyNjI3NTEsLTIwOTYwNzQ2NDcsMTIwNjc3
-NTU0MywtMzM1NTY1MjkzLC00NTcwOTA3OTYsNDkyMDI5MDY0LD
-Q0MTM5ODY1XX0=
+eyJoaXN0b3J5IjpbOTcyNzA4MjQ0LC0yMDEwNDgzMzcwLDExMT
+Y4ODg2ODcsMTQzOTI0MzM0MiwtNDM5MjYyNzUxLC0yMDk2MDc0
+NjQ3LDEyMDY3NzU1NDMsLTMzNTU2NTI5MywtNDU3MDkwNzk2LD
+Q5MjAyOTA2NCw0NDEzOTg2NV19
 -->
