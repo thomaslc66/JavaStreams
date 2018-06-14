@@ -411,7 +411,9 @@ public class Index
 
 #### //                        Exercice 4 - Unité 1							              //
 ```java
- index.merge(word, 
+Map<String, Set<Integer>> index = new TreeMap<>();
+//nous devons donc faire en sorte que Index soit une Map de String, Set<Integer>
+index.merge(word, 
              new TreeSet<>(Arrays.asList(line)), 
              (old, next) -> { 
                 old.addAll(next);
@@ -808,7 +810,7 @@ System.out.println(
 This cheat sheet was based on the lecture of Cay Horstmann
 http://horstmann.com/heig-vd/spring2015/poo/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTI0MzM0MiwtNDM5MjYyNzUxLC0yMD
-k2MDc0NjQ3LDEyMDY3NzU1NDMsLTMzNTU2NTI5MywtNDU3MDkw
-Nzk2LDQ5MjAyOTA2NCw0NDEzOTg2NV19
+eyJoaXN0b3J5IjpbMTExNjg4ODY4NywxNDM5MjQzMzQyLC00Mz
+kyNjI3NTEsLTIwOTYwNzQ2NDcsMTIwNjc3NTU0MywtMzM1NTY1
+MjkzLC00NTcwOTA3OTYsNDkyMDI5MDY0LDQ0MTM5ODY1XX0=
 -->
